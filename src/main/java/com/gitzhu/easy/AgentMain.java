@@ -12,6 +12,8 @@ public class AgentMain {
         throws UnmodifiableClassException {
         inst.addTransformer(new Transformer(), true);
         inst.retransformClasses(TransClass.class);
+//        inst.setNativeMethodPrefix();
+//        inst.appendToBootstrapClassLoaderSearch();
         System.out.println("Agent Main Done");
     }
 }
